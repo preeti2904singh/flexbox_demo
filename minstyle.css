@@ -1,7 +1,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1em;
     direction: ltr;
     font-family: Lato, Arial, sans-serif;
 }
@@ -10,8 +10,6 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockqu
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin:0;
-    padding: 0;
 }
 
 body {
@@ -24,32 +22,15 @@ nav {
     margin-bottom: 2rem;
 }
 
-nav ul,
-nav ul li,
-hgroup h1,
-footer,
-section.main,
-section.spotlight,
-section.main,
-ul.social,
-header hgroup{
-    display: flex;
-}
-
-nav ul,
-header hgroup,
-hgroup h1,
-section.main,
-footer{
-    flex-flow: row wrap;
-}
-
 nav ul{
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 nav ul li{
     /*padding:1rem 0;*/
+    display: flex;
     align-items: center;
 }
 
@@ -90,16 +71,20 @@ header {
 }
 
 header hgroup {
+    display: flex;
     align-items: baseline;
-}
+    flex-flow: row wrap;
+}\
 
 hgroup h1 {
     background: url(images/gb-logo-100.png) left center no-repeat;
     min-height: 100px;
     padding-left: 5rem;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3rem;
+    display: flex;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 span.generic{
@@ -108,7 +93,7 @@ span.generic{
 }
 
 header h2 {
-    font-size: 1.5vw;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
     color: #666;
@@ -116,7 +101,11 @@ header h2 {
 }
 
 section.main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 2em;
+    flex-flow: row wrap;
 }
 
 article.featured {
@@ -127,12 +116,12 @@ article.featured {
 .featured h2 {
     color: #666;
     font-weight: 200;
-    font-size: 1.87vw;
+    font-size: 1.5em;
     margin: 0 0 1em;
 }
 
 .featured h3 {
-    font-size: 5vw;
+    font-size: 4em;
     padding-bottom: .25em;
     border-bottom: 2px solid #666;
 }
@@ -150,7 +139,7 @@ aside.sidebar {
 
 aside p {
     font-family: Lato, Arial, sans-serif;
-    font-size: 1.042vw;
+    font-size: 15px;
     line-height: 2;
     font-style: normal;
 }
@@ -210,7 +199,7 @@ a.button.right.cf {
 
 article.featured p {
     line-height: 1.5;
-    font-size: 1.56vw;
+    font-size: 1.25em;
 }
 
 .action a{
@@ -221,6 +210,7 @@ article.featured p {
 }
 
 section.spotlight {
+    display: flex;
     flex-wrap: wrap;
     margin-bottom: 2em;
 }
@@ -235,7 +225,7 @@ section.spotlight {
 article.latest h2 {
     background: #42659A;
     color: white;
-    font-size: 1.56vw;
+    font-size: 1.25em;
     font-weight: 100;
     line-height: 45px;
     padding-left: 1.2em;
@@ -247,13 +237,13 @@ article.latest h2 {
 }
 
 .latest h3 {
-    font-size: 2.5vw;
+    font-size: 2em;
     margin: .4em 0;
     padding-left: 1.2rem;
 }
 
 .latest p {
-    font-size: 1.25vw;
+    font-size: 1em;
     line-height: 1.6;
     padding: 0 1.2rem;
 }
@@ -291,5 +281,7 @@ article.latest h2 {
 footer {
     background: #4d4d4d;
     padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
     color: #fff;
 }
