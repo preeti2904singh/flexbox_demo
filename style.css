@@ -1,0 +1,287 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    direction: ltr;
+    font-family: Lato, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background: #42659A;
+    margin-bottom: 2rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul li{
+    /*padding:1rem 0;*/
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding:1.2rem;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    background: black;
+}
+
+li.search-form {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+input#search {
+    border-radius: 0;
+    border: 0;
+    padding: 6px 8px;
+    height: 20px;
+}
+
+button.button {
+    border-radius: 0;
+    border: 0;
+    height: 20px;
+    background: #000;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 2em;
+    min-height: 100px;
+}
+
+header hgroup {
+    display: flex;
+    align-items: baseline;
+    flex-flow: row wrap;
+}
+
+hgroup h1 {
+    background: url(images/gb-logo-100.png) left center no-repeat;
+    min-height: 100px;
+    padding-left: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+span.generic{
+    color: #42659A;
+    font-family: Cardo, Georgia, Times, serif;
+}
+
+header h2 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #666;
+    text-transform: lowercase;
+}
+
+section.main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+    flex-flow: row wrap;
+}
+
+article.featured {
+    order: 2;
+    flex: 3;
+}
+
+.featured h2 {
+    color: #666;
+    font-weight: 200;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+.featured h3 {
+    font-size: 4em;
+    padding-bottom: .25em;
+    border-bottom: 2px solid #666;
+}
+
+aside.sidebar {
+    order: 1;
+    flex: 1;
+    margin-right: 2em;
+}
+
+.featured img.teaser {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+aside p {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    font-style: normal;
+}
+
+span.call {
+    color: #42659A;
+    font-weight: bold;
+}
+
+ul.social {
+    list-style: none;
+    margin-top: 2.3em;
+    border-top: 1px solid #999;
+    padding-top: 2.3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.social li a.twitter {
+    background: url(images/social_twitter_35.png) no-repeat;
+}
+
+ul.social li a.rss {
+    background: url(images/social_rss_35.png) no-repeat;
+}
+
+ul.social li a {
+    text-indent: -9000px;
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+aside h3 {
+    color: #333;
+    font-size: 1.6em;
+    margin-top: 2em;
+    margin-bottom: .4em;
+}
+
+section.newsletter.cf h3 {
+    font-weight: normal;
+}
+
+a.button.right.cf {
+    text-decoration: none;
+    width: auto;
+    background: #42659A;
+    border: 1px solid #213149;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+    padding: 5px 10px;
+    line-height: 1;
+}
+
+article.featured p {
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+
+.action a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #42659A;
+}
+
+section.spotlight {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.latest {
+    margin-right: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #999;
+    flex: 1;
+}
+
+article.latest h2 {
+    background: #42659A;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 100;
+    line-height: 45px;
+    padding-left: 1.2em;
+    margin-bottom: 0;
+}
+
+.latest img {
+    width: 100%;
+}
+
+.latest h3 {
+    font-size: 2em;
+    margin: .4em 0;
+    padding-left: 1.2rem;
+}
+
+.latest p {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0 1.2rem;
+}
+
+.call {
+    font-weight: 900;
+    color: #42659A;
+    margin-top: auto;
+}
+
+.button {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    width: auto;
+    background: #42659A;
+    border: 1px solid #213149;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.latest:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background: #4d4d4d;
+    padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+}
